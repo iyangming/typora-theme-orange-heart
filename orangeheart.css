@@ -226,7 +226,16 @@
   color: #000;
 }
 
-/* 代码块主题 - 设置代码块的语法高亮颜色 */
+/* 代码块主题 - 设置代码块的语法高亮颜色
+ * 1. 创建伪元素作为代码块顶部装饰
+ * 2. 设置100%宽度
+ * 3. 背景图片大小为40px
+ * 4. 禁止背景重复
+ * 5. 设置深灰色背景(#282c34)
+ * 6. 负边距使装饰与代码块更紧密
+ * 7. 5px圆角边框
+ * 8. 背景图片位置偏移10px
+ */
 .md-fences:before {
   content: ' ';
   display: block;
@@ -239,10 +248,19 @@
   background-position: 10px 10px;
 }
 
-/* CodeMirror相关内容 - 设置代码编辑器的样式 */
+/* CodeMirror相关内容 - 设置代码编辑器的样式
+ * 1. 设置水平滚动条自动显示
+ */
 .CodeMirror-wrap .CodeMirror-scroll {
   overflow-x: auto;
 }
+/* 代码编辑器基础样式
+ * 1. 设置0.5rem内边距
+ * 2. 深蓝灰色背景(#292d3e)
+ * 3. 浅灰色文字颜色(#a6accd)
+ * 4. 使用Consolas等宽字体
+ * 5. 4px圆角边框
+ */
 .cm-s-inner.CodeMirror {
   padding: .5rem;
   background-color: #292d3e;
@@ -250,9 +268,11 @@
   font-family: Consolas;
   border-radius: 4px;
 }
+/* 关键字 - 紫色(#c792ea) */
 .cm-s-inner .cm-keyword {
   color: #c792ea !important;
 }
+/* 操作符 - 亮蓝色(#89ddff) */
 .cm-s-inner .cm-operator {
   color: #89ddff !important;
 }
@@ -275,15 +295,18 @@
 .cm-s-inner .cm-def {
   color: #82aaff !important;
 }
+/* 字符串 - 浅绿色(#c3e88d) */
 .cm-s-inner .cm-string {
   color: #c3e88d !important;
 }
 .cm-s-inner .cm-string-2 {
   color: #f07178 !important;
 }
+/* 注释 - 灰蓝色(#676e95) */
 .cm-s-inner .cm-comment {
   color: #676e95 !important;
 }
+/* 变量 - 橙红色(#f07178) */
 .cm-s-inner .cm-variable {
   color: #f07178 !important;
 }
@@ -306,6 +329,7 @@
 .cm-s-inner .cm-type {
   color: #decb6b !important;
 }
+/* 错误 - 白色文字配红色背景(#ff5370) */
 .cm-s-inner .cm-error {
   color: rgba(255, 255, 255, 1) !important;
   background-color: #ff5370 !important;
