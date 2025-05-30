@@ -1,4 +1,4 @@
-/* 全局属性 */
+/* 全局属性 - 设置Typora编辑区域的基本样式 */
 #write {
   max-width: 860px;
   font-size: 1rem;
@@ -13,7 +13,7 @@
   font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/*段落*/
+/*段落 - 设置正文段落的样式 */
 #write + p, 
 #write blockquote p {
   font-size: 1rem;
@@ -27,7 +27,7 @@
   font-size: 1rem;
 }
 
-/*标题*/
+/*标题 - 设置各级标题的样式 */
 #write h1,
 #write h2,
 #write h3,
@@ -77,7 +77,7 @@
   font-size: 1rem;
 }
 
-/*列表*/
+/*列表 - 设置有序和无序列表的样式 */
 #write ul,
 #write ol {
   margin-top: 8px;
@@ -103,7 +103,7 @@
   font-weight: 500;
 }
 
-/*引用*/
+/*引用 - 设置引用块的样式 */
 #write blockquote {
   display: block;
   font-size: .9em;
@@ -116,7 +116,7 @@
   background: #fff9f9;
 }
 
-/*链接*/
+/*链接 - 设置超链接的样式 */
 #write a {
   text-decoration: none;
   word-wrap: break-word;
@@ -126,7 +126,7 @@
   border-bottom: 1px solid rgb(239, 112, 96);
 }
 
-/*行内代码*/
+/*行内代码 - 设置行内代码的样式 */
 #write p code,
 #write li code {
   font-size: .9rem;
@@ -140,7 +140,7 @@
   word-break: break-all;
 }
 
-/*图片*/
+/*图片 - 设置图片的显示方式 */
 #write img {
   display: block;
   margin: 0 auto;
@@ -153,7 +153,7 @@
   border-left: 0px;
 }
 
-/*表格*/
+/*表格 - 设置表格的样式 */
 #write table {
   display: table;
   text-align: left;
@@ -210,7 +210,7 @@
   color: #000;
 }
 
-/* 代码块主题 */
+/* 代码块主题 - 设置代码块的语法高亮颜色 */
 .md-fences:before {
   content: ' ';
   display: block;
@@ -223,7 +223,7 @@
   background-position: 10px 10px;
 }
 
-/* CodeMirror 相关内容 */
+/* CodeMirror相关内容 - 设置代码编辑器的样式 */
 .CodeMirror-wrap .CodeMirror-scroll {
   overflow-x: auto;
 }
